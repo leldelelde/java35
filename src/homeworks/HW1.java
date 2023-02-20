@@ -8,7 +8,7 @@ public class HW1 {
         // Input:
         //      John, 2000
         // Print out:
-        //      "Your name is John and you are 22 years old"
+        //      "Your name is John and you are 23 years old"
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your name");
@@ -17,7 +17,7 @@ public class HW1 {
         System.out.println("Please enter your year of birth");
         int year = scanner.nextInt();
 
-        System.out.println("Your name is " + name + " and you are " + (2022 - year) + " years old");
+        System.out.println("Your name is " + name + " and you are " + (2023 - year) + " years old");
 
 
 

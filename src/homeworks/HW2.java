@@ -13,7 +13,7 @@ public class HW2 {
         System.out.println("Enter speed in mp/h");
         float speed = scanner.nextFloat();
 
-        System.out.println(speed + " mp/h in km/h would be equal to " + (speed * 1.609344));
+        System.out.println(speed + " mp/h in km/h would be equal to " + (speed * 1.609344f));
 
 
 
