@@ -1,5 +1,7 @@
 package homeworks;
 
+import java.util.Scanner;
+
 public class HW3 {
     public static void main(String[] args) {
 
@@ -9,5 +11,19 @@ public class HW3 {
 
         Your application should read one number (int) and print false or true on the screen,
         according to instructions above.*/
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter a number");
+        int number = scanner.nextInt();
+
+        boolean near100 = true;
+        boolean farFrom100 = false;
+
+        if (number >=90 && number <= 110){
+            System.out.println(near100);
+        } else{
+            System.out.println(farFrom100);
+        }
     }
 }
