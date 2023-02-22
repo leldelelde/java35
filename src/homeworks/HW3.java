@@ -16,6 +16,7 @@ public class HW3 {
 
         System.out.println("Please enter a number");
         int number = scanner.nextInt();
+        System.out.println("Is the number near 100?");
 
         boolean near100 = true;
         boolean farFrom100 = false;
@@ -25,5 +26,8 @@ public class HW3 {
         } else{
             System.out.println(farFrom100);
         }
+
+        System.out.println(Math.abs(100 - number) <= 10);
+
     }
 }

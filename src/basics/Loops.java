@@ -38,5 +38,21 @@ public class Loops {
             System.out.print(i + " ");
         }
 
+        System.out.println();
+        //While loop
+        int i = 100;
+        while (i <= 10){
+            System.out.println("This is while loop " + i);
+            i++;
+        }
+
+        // Do while loop
+        i = 100;
+        do {
+            System.out.println("This is do while loop " + i);
+            i++;
+        }while (i <= 10);
+
+
     }
 }
