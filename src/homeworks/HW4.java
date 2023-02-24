@@ -20,6 +20,7 @@ public class HW4 {
         System.out.println("Please enter another number ");
         int num2 = scanner.nextInt();
 
+        // Long version
         boolean sameSign = true;
         boolean differentSign = false;
 
@@ -28,5 +29,9 @@ public class HW4 {
         } else{
             System.out.println(differentSign);
         }
+
+        // Short version
+
+        System.out.println((num1 >0 && num2 > 0 || num1 < 0 && num2 < 0));
     }
 }
