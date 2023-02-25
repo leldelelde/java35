@@ -25,24 +25,22 @@ public class HW5 {
         System.out.println("Please enter the amount of jam in kg Jane needs");
         int kgOfJam = scanner.nextInt();
 
-        int numOfJams = ((kgOfJam / 7) + (kgOfJam % 7));
+        int numOfJars = ((kgOfJam / 7) + (kgOfJam % 7));
 
+        int positiveNumOfKg;
 
-        if (kgOfJam < 0){
-            System.out.println("Number should be positive");
+        if(kgOfJam <= 0){
+            do{
+                System.out.println("Amount of kg should be in positive number");
+                positiveNumOfKg = scanner.nextInt();
 
-            } else {
-            System.out.println((kgOfJam <= 42) && (numOfJams <=6));
-            }
+            }while (kgOfJam > 0);
+        }
+        System.out.println("Is Will able to take home this amount of jam? " + (numOfJars <=6));
 
-
-
-
-
-
-
+        }
 
 
 
     }
-}
+
