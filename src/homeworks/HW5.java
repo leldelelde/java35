@@ -26,17 +26,25 @@ public class HW5 {
         int kgOfJam = scanner.nextInt();
 
         int numOfJars = ((kgOfJam / 7) + (kgOfJam % 7));
+        //short solution
+        System.out.println("Is Will able to take home this amount of jam? " + (numOfJars <= 6));
 
+        //long solution if avoiding negative numbers
         int positiveNumOfKg;
 
-        if(kgOfJam <= 0){
-            do{
-                System.out.println("Amount of kg should be in positive number");
+        if (kgOfJam <=0) {
+            do {
+                System.out.println("Amount of kg should be a positive number");
                 positiveNumOfKg = scanner.nextInt();
 
-            }while (kgOfJam > 0);
+            } while (positiveNumOfKg <= 0);
+            int numOfJarsCorrected = ((positiveNumOfKg / 7) + (positiveNumOfKg % 7));
+            System.out.println("Is Will able to take home this amount of jam? " + (numOfJarsCorrected <= 6));
+
+        } else {
+            System.out.println("Is Will able to take home this amount of jam? " + (numOfJars <= 6));
         }
-        System.out.println("Is Will able to take home this amount of jam? " + (numOfJars <=6));
+
 
         }
 
