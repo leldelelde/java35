@@ -5,9 +5,7 @@ public class HW6 {
         /*        Write an application, that will print the full latin alphabet
         (upper case letters) in alphabetical order. Each letter should be printed in new line.*/
 
-        char abc = 65;
-
-        for (int i = 0; abc <=90; abc++){
+        for (char abc = 65; abc <=90; abc++){
             System.out.println(abc);
         }
     }
