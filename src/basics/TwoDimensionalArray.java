@@ -1,5 +1,7 @@
 package basics;
 
+import java.util.Arrays;
+
 public class TwoDimensionalArray {
     public static void main(String[] args) {
 
@@ -34,6 +36,21 @@ public class TwoDimensionalArray {
                 System.out.print(dreamCars[i][j] + " ");
             }
             System.out.println();
+        }
+
+        //Same thing using nested for-each loops
+
+        for(String [] rows: dreamCars){
+            System.out.println(Arrays.toString(rows));
+
+        }
+
+        for(String [] rows: dreamCars){
+            for (String car: rows){
+                System.out.print(car + " ");
+            }
+            System.out.println();
+
         }
 
     }
