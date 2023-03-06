@@ -16,10 +16,9 @@ public class HW7 {
         //System.out.println(ArrayFromInput.length);
         System.out.println("Enter the elements of the array one by one");
 
-        for (int i = 0; i < sizeOfArray; i++){
+        for (int i = 0; i < ArrayFromInput.length; i++){
             System.out.println("Please enter element number: " + (i+1));
-            int elementNr = scanner.nextInt();
-            ArrayFromInput[i] = elementNr;
+            ArrayFromInput[i] = scanner.nextInt();
         }
         System.out.print("Source Array: ");
         for (int i = 0; i < sizeOfArray; i++) {
