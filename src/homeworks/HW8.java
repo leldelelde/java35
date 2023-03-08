@@ -1,5 +1,6 @@
 package homeworks;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HW8 {
@@ -26,7 +27,9 @@ public class HW8 {
         }
         System.out.printf("Average grade : %.2f\n", average);
 
-        System.out.printf("There was passed %d values", sizeOfArray);
+        System.out.printf("There was passed %d values\n", sizeOfArray);
+        System.out.println(Arrays.toString(DefinedArray));
+
 
     }
 }
