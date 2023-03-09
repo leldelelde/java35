@@ -9,24 +9,23 @@ public class HW9 {
         System.out.println("Enter a Christmas tree size");
         int treeSize = scanner.nextInt();
 
-
         for (int i = 0; i < treeSize; i++){
-            for (int j = treeSize; j >= i; j--){
+            for (int j = treeSize - 1; j > i; j--){
                 System.out.print(" ");
             }
-            for (int j = 0; j<= i; j++){
+            for (int j = 0; j<= i+i; j++){
                 System.out.print("*");
             }
-            for(int j = 0; j < i; j++){
-                System.out.print("*");
-            }
+        //    for(int j = 0; j < i; j++){
+        //        System.out.print("*");
+        //    }
             System.out.println();
         }
-        for (int i = 1; i == 1; i++) {
-            for (int j = treeSize + 1; j >= i; j--) {
+        for (int i = 0; i == 0; i++) {
+            for (int j = treeSize -1; j > i; j--) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i; j++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print("#");
             }
         }
