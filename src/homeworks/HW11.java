@@ -12,7 +12,7 @@ public class HW11 {
 
         while (again == 'y'){
             System.out.println("Enter your personal number:");
-            String personalNumber = scanner.nextLine();
+            String personalNumber = scanner.nextLine().trim();
             if (Pattern.matches("[0-9]{6}-[0-9]{5}", personalNumber)){
                 System.out.println("Your personal number is valid");
             } else{

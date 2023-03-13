@@ -9,9 +9,9 @@ public class HW10 {
         System.out.println("Original array: " + Arrays.toString(myArray));
 
         for(int i = 0; i < myArray.length/2; i++){
-            int reverse = myArray[i];
+            int temp = myArray[i];
             myArray[i] = myArray[myArray.length -1 -i];
-            myArray[myArray.length-1-i] = reverse;
+            myArray[myArray.length-1-i] = temp;
         }
         System.out.print("Reverse array: " + Arrays.toString(myArray));
 
