@@ -9,25 +9,29 @@ public class HW13 {
         System.out.println("Original Array: " + Arrays.toString(myArray));
 
         max(myArray);
+        min(myArray);
+    }
+    public static int max (int [] my_array){
+        int max = my_array[0];
 
-
+        for (int i = 0; i< my_array.length; i++){
+            if (my_array[i]>max){
+                max = my_array[i];
+            }
+        }
+        System.out.println("Maximum value for the above array = " + max);
+        return max;
     }
 
-    public static int max (int [] my_array){
-        int i = 0;
-        int k = 0;
-        int j = 0;
-        int maxValue = 0;
-        for (int allValues : my_array){
-            if (my_array[i] > my_array[i+1]){
-                k = my_array[i];
-            } else {
-                j = my_array[i+1];
+    public static int min (int [] my_array){
+        int min = my_array[0];
+
+        for (int i = 0; i< my_array.length; i++){
+            if (my_array[i]<min){
+                min = my_array[i];
             }
-            i++;
-            maxValue = Math.max(j, k);
         }
-        System.out.println("Maximum value for the above array = " + maxValue);
-        return maxValue;
+        System.out.println("Minimum value for the above array = " + min);
+        return min;
     }
 }
