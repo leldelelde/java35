@@ -30,3 +30,7 @@ public class HW14 {
         return priceAfterDiscount;
     }
 }
+// DecimalFormat df = new DecimalFormat("0,00";
+// soutln ("Special price: " + df.format(result));
+
+//for percentage sign could use %%
