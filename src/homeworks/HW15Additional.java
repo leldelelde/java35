@@ -20,7 +20,7 @@ public class HW15Additional {
     public static String rockPaperScissorsLizardSpock (String player1, String player2){
         if(isPlayersInputValid(player1, player2)){
             if (player1.matches(player2)){
-                System.out.println("Player's 1 move: " + player1 + ", Player's 2 movee: " + player2 + ". Result: --> TIE");
+                System.out.println("Player's 1 move: " + player1 + ", Player's 2 move: " + player2 + ". Result: --> TIE");
             } else if ((player1.equals("rock") && player2.matches("scissors|lizard"))
                     || (player1.equals("scissors") && player2.matches("paper|lizard"))
                     || (player1.equals("paper") && player2.matches("rock|spock"))

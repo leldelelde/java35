@@ -16,6 +16,10 @@ class Bike extends Vehicle {
     }
 }
 
+class GrandChild extends Bike {
+
+}
+
 public class VehicleExample {
     public static void main(String[] args) {
         Vehicle vehicle = new Vehicle();
@@ -25,5 +29,8 @@ public class VehicleExample {
         Bike bike = new Bike();
         bike.brand = "Cube";
         bike.hank();
+
+        GrandChild grandchild = new GrandChild();
+        grandchild.hank();
     }
 }
