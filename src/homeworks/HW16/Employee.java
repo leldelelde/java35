@@ -8,8 +8,9 @@ public class Employee extends Member {
         super (name, age, phoneNumber, address, salary);
         this.specialization = specialization;
     }
-
-    public void printSalary (){
-        System.out.println("Salary for " + name + " is " + salary);
-    }
+    //Not necessary here, as this is already in abstract class Member
+    //It would be necessary only if in the abstract class it would be abstract
+   // public void printSalary (){
+   //     System.out.printf("Salary for %s is %d", name, salary);
+    //}
 }

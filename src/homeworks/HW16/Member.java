@@ -16,6 +16,6 @@ public abstract class Member {
         this.salary = salary;
     }
     public void printSalary() {
-        System.out.printf("Salary for %s is %d", name, salary);
+        System.out.printf("Salary for %s is %d\n", name, salary);
     }
 }

@@ -7,9 +7,9 @@ public class Manager extends Member {
         super (name, age, phoneNumber, address, salary);
         this.department = department;
     }
-
-    public void printSalary (){
-        System.out.println("Salary for " + name + " is " + salary);
-    }
+    //Not necessary here, as this is already in abstract class Member
+    //public void printSalary (){
+   //     System.out.printf("Salary for %s is %d", name, salary);
+  //  }
 
 }
