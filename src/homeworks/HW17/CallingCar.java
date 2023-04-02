@@ -21,12 +21,9 @@ public class CallingCar {
         if (input == 'y'){
             airConditioner = true;
         }
-        System.out.println(airConditioner);
 
-        Car newVehicle = new Car(fuel, fuelUsage, passengers, airConditioner);
-        float maxDistance = newVehicle.maxDistance2();
-        System.out.printf("Your vehicle can drive maximum of %.2f kilometers", maxDistance);
-
-
+        Car car = new Car(fuel, fuelUsage, passengers, airConditioner);
+        float maxDistanceNew = car.maxDistance();
+        System.out.printf("Your vehicle can drive maximum of %.2f kilometers", maxDistanceNew);
     }
 }

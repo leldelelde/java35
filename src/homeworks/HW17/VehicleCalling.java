@@ -15,7 +15,7 @@ public class VehicleCalling {
         int passengers = scanner.nextInt();
 
         Vehicle vehicle = new Vehicle(fuel, fuelUsage, passengers);
-        float maxDistance = vehicle.maxDistance2();
+        float maxDistance = vehicle.maxDistance();
         System.out.printf("Your vehicle can drive maximum of %.2f kilometers", maxDistance);
 
     }

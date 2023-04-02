@@ -7,13 +7,12 @@ public class Car extends Vehicle {
         super(fuel, fuelUsage, passengers);
         this.airConditioner = airConditioner;
     }
+    public float getCalculatedFuelUsage(float fuelUsage, int passengers) {
+        float calculatedFuelUsage = fuelUsage + (passengers * fuelUsage * 0.05f);
 
-    public float maxDistance2 (float fuel, float fuelUsage, int passengers, boolean airConditioner) {
-        float impactOnFuelUsage = ((passengers * 5) / 100f) * fuelUsage;
-        float total = (fuel / (fuelUsage + impactOnFuelUsage)) * 100f * 14f;
-        if (airConditioner = true) {
-            total += 0.1f * total;
+        if (airConditioner) {
+            return calculatedFuelUsage * 1.1f;
         }
-        return total;
+        return calculatedFuelUsage;
     }
 }

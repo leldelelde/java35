@@ -11,14 +11,18 @@ public class Vehicle {
         this.passengers = passengers;
     }
 
-    public float maxDistance1 (float fuel, float fuelUsage, int passengers){
-       float impactOnFuelUsage = ((passengers * 5) / 100f) * fuelUsage;
-       return (fuel / (fuelUsage + impactOnFuelUsage)) * 100f;
+    public float getCalculatedFuelUsage(float fuelUsage, int passengers) {
+        return fuelUsage + (passengers * fuelUsage * 0.05f);
     }
 
-    public float maxDistance2(){
-        float impactOnFuelUsage = ((passengers * 5) / 100f) * fuelUsage;
-        return (fuel / (fuelUsage + impactOnFuelUsage)) * 100f;
+    public float maxDistance (float fuel, float fuelUsage, int passengers){
+       float calculatedFuelUsage = getCalculatedFuelUsage(fuelUsage, passengers);
+       float distance = (fuel / calculatedFuelUsage) * 100f;
+       return distance;
+    }
+
+    public float maxDistance(){
+      return maxDistance (fuel, fuelUsage, passengers);
     }
 }
 
