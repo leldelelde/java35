@@ -31,15 +31,19 @@ public class Main {
                     break;
                 case 3:
                     //modify item
+                    modifyItem();
                     break;
                 case 4:
                     //remove item
+                    removeItem();
                     break;
                 case 5:
                     //search for item
+                    searchItem();
                     break;
                 case 6:
                     //delete all items
+                    groceryList.deleteAllItems();
                     break;
                 case 7:
                     //quit
@@ -64,5 +68,29 @@ public class Main {
     private static void addItem(){
         System.out.println("Please enter the grocery item:");
         groceryList.addGroceryItem(scanner.nextLine());
+    }
+
+    private static void modifyItem (){
+        System.out.println("Enter item number");
+        int itemNo = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Enter replacement item");
+        String newItem = scanner.nextLine();
+        groceryList.modifyGroceryItem(itemNo-1, newItem);
+    }
+
+    private static void removeItem (){
+        System.out.println("Enter item name that you want to delete:");
+        groceryList.removeGroceryItem(scanner.nextLine());
+    }
+
+    private static void searchItem (){
+        System.out.println("Enter item to search for:");
+        String searchItem = scanner.nextLine();
+        if(groceryList.searchItem(searchItem)){
+            System.out.println("Found " + searchItem + " in your grocery list");
+        } else {
+            System.out.println(searchItem + " not found in the grocery list");
+        }
     }
 }

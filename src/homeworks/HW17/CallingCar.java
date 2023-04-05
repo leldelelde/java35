@@ -23,7 +23,6 @@ public class CallingCar {
         }
 
         Car car = new Car(fuel, fuelUsage, passengers, airConditioner);
-        float maxDistanceNew = car.maxDistance();
-        System.out.printf("Your vehicle can drive maximum of %.2f kilometers", maxDistanceNew);
+        System.out.printf("Your vehicle can drive maximum of %.2f kilometers", car.maxDistance());
     }
 }
