@@ -15,6 +15,8 @@ public class VehicleCalling {
         int passengers = scanner.nextInt();
 
         Vehicle vehicle = new Vehicle(fuel, fuelUsage, passengers);
-        System.out.printf("Your vehicle can drive maximum of %.2f kilometers", vehicle.maxDistance());
+        System.out.printf("Your vehicle can drive maximum of %.2f kilometers\n", vehicle.maxDistance());
+
+        System.out.println(vehicle.maxDistance(70, 7, 4));
     }
 }

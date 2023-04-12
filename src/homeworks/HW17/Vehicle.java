@@ -38,12 +38,12 @@ public class Vehicle {
     }
 
     public float maxDistance (float fuel, float fuelUsage, int passengers){
-        return (fuel / (fuelUsage + (passengers * fuelUsage * 0.05f))) * 100f;
+        return (fuel / (fuelUsage * (1 + passengers * 0.05f))) * 100f;
 
     }
 
     public float maxDistance(){
-        return (fuel / (fuelUsage + (passengers * fuelUsage * 0.05f))) * 100f;
+        return (fuel / (fuelUsage * (1 + passengers * 0.05f))) * 100f;
     }
 }
 

@@ -8,13 +8,17 @@ public class Car extends Vehicle {
         this.airConditioner = airConditioner;
     }
     public float maxDistance(){
-        float total = (fuel / (fuelUsage + (passengers * fuelUsage * 0.05f))) * 100f;
-
-        if (airConditioner && passengers > 0) {
-            return fuel / (fuelUsage + ((passengers * fuelUsage * 0.05f) *1.1f)) * 100f;
-        } else if (airConditioner && passengers == 0){
-            return (fuel / (fuelUsage * 1.1f)) * 100f;
+        float airConditionerAdd;
+        if (airConditioner){
+            airConditionerAdd = 1.1f;
+        }else {
+            airConditionerAdd = 1f;
         }
-        return total;
+
+        //Passenger impact calculation
+        float usage = fuelUsage * (1 + passengers * 0.05f);
+
+        float maxDistance = fuel / (usage * airConditionerAdd) * 100;
+        return maxDistance;
     }
 }
